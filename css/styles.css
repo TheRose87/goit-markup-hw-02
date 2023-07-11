@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --iriscolor: #4d5ae5;
+  --navyblue: #2e2f42;
+  --navcolor: #2e2f42;
+  --oceancolor: #404bbf;
+  --slate: #434455;
+  --whitecolor: white;
+}
+
+.link-logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.web-logo {
+  color: var(--iriscolor);
+}
+
+.studio-logo {
+  color: var(--navyblue);
+}
+
+.studio-logo2 {
+  color: var(--whitecolor);
+}
+
+.navbar .pages {
+  color: var(--navcolor);
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.lists {
+  list-style-type: none;
+}
+
+.navbar .pages:hover,
+.navbar .pages:focus,
+.navbar .pages.currentoption,
+.contact-info .info:hover,
+.contact-info .info:focus {
+  color: var(--oceancolor);
+}
+
+.contact-info .info {
+  color: var(--slate);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+}
+
+.bg-section1 {
+  background: var(--navyblue);
+}
+
+.h1-title {
+  color: var(--whitecolor);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.12px;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  border-color: transparent;
+  font-family: inherit;
+}
+
+.btn.primary {
+  background: var(--iriscolor);
+  color: var(--whitecolor);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.btn.primary:hover,
+.btn.primary:focus {
+  background-color: var(--oceancolor);
+}
+
+.btn.filter {
+  background-color: var(--whitecolor);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.btn.filter:hover,
+.btn.filter:focus,
+.btn.filter.primary {
+  background-color: var(--oceancolor);
+  color: var(--whitecolor);
+  padding: 12px 24px;
+}
+
+.desclist .titlelist {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: var(--slate);
+}
+
+.sectiontitle {
+  text-align: center;
+  color: var(--navyblue);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.teamname {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.position {
+  color: var(--slate);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.footerbg {
+  background: var(--navyblue);
+}
+
+.footerdesc {
+  color: var(--whitecolor);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.projectimg {
+  text-decoration: none;
+}
+
+.parentlist {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.childlist {
+  color: var(--slate);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}

@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap");
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 :root {
   --iriscolor: #4d5ae5;
   --navyblue: #2e2f42;
@@ -15,19 +11,27 @@ body {
   --cornflower: #e7e9fc;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--slate);
+}
+
 .logo-link {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  display: inline-flex;
-  height: 24px;
-  align-items: center;
-  flex-shrink: 0;
+  font-size: 0;
+  font-weight: 800;
+}
+.logo-link > span {
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .logo {
   color: var(--iriscolor);
-  font-weight: 800;
-  font-size: 18px;
 }
 
 .studio {
@@ -35,19 +39,16 @@ body {
 }
 
 .studio-footer {
-  color: var(--whitecolor);
-  font-weight: 800;
-  font-size: 18px;
+  color: var(--cloudcolor);
 }
 
 .nav-menu .page {
   color: var(--navcolor);
   text-decoration: none;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .list {
@@ -65,10 +66,9 @@ body {
 .contacts-menu .item {
   color: var(--slate);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
@@ -79,10 +79,9 @@ body {
 .hero-title {
   color: var(--whitecolor);
   font-size: 56px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 1.12px;
+  line-height: 1.07;
+  letter-spacing: 0.04em;
   text-align: center;
 }
 
@@ -90,16 +89,18 @@ body {
   cursor: pointer;
   border-color: transparent;
   font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
 }
 
 .button.primary {
   background: var(--iriscolor);
   color: var(--whitecolor);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
 .button.primary:hover,
@@ -108,69 +109,56 @@ body {
 }
 
 .button.filter {
-  background-color: var(--cornflower);
-  font-size: 16px;
-  font-style: normal;
+  background-color: var(--cloudcolor);
+  color: var(--iriscolor);
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
+  line-height: 1.62;
 }
 
 .button.filter:hover,
 .button.filter:focus,
 .button.filter.current {
   background-color: var(--oceancolor);
-  color: var(--whitecolor);
-}
-
-.title {
-  color: var(--navyblue);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 120% */
-  letter-spacing: 0.4px;
-}
-.description {
-  color: var(--slate);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  color: var(--cloudcolor);
 }
 
 .bg-team {
   background: var(--cloudcolor);
 }
 
+.team .name {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  text-align: center;
+}
+
+.team .position {
+  color: var(--slate);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
 .section-title {
   text-align: center;
   color: var(--navyblue);
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
+  line-height: 1.17;
 }
-
-.name {
-  color: var(--navyblue);
+.benefits .title {
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.4px;
+  color: var(--navyblue);
 }
 
-.position {
+.benefits .description {
   color: var(--slate);
+  line-height: 1.71;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
 }
 
 .bg-footer {
@@ -180,35 +168,24 @@ body {
 .footer-description {
   color: var(--whitecolor);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-}
-
-.projects {
-  list-style-type: none;
-  text-decoration: none;
 }
 
 .project {
   text-decoration: none;
 }
 
-.project {
-  color: var(--navyblue);
+.project .name {
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.4px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--navyblue);
 }
 
 .type {
   color: var(--slate);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  line-height: 1.87;
 }
